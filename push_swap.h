@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 09:17:32 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/10 10:37:45 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/10 12:50:09 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,10 @@ int		ft_is_sorted(t_stack *stack);
 void	bubble_sort(int *array, int len);
 void	plot_indacies(t_stack *stack);
 void	freeall(t_stack *stack);
+
+		//rotate.c//
+void	rotate_a(t_stack *stack, char *printer);
+void	rotate_b(t_stack *stack, char *printer);
+void	rotate_both(t_stack *stack, char *printer);
 
 #endif
