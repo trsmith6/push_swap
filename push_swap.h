@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 09:17:32 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/10 12:50:09 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/11 15:35:12 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ typedef struct s_stack
 		//push_swap.c//
 int		main(int argc, char *argv[]);
 int		sort_index(t_stack *stack);
+int		ft_lower_sort(int nb);
+int		ft_lower_sort_search(int b, int low, int high);
 
 		//push_revrot.c//
 void	push_a(t_stack *stack, char *printer);
@@ -53,5 +55,24 @@ void	freeall(t_stack *stack);
 void	rotate_a(t_stack *stack, char *printer);
 void	rotate_b(t_stack *stack, char *printer);
 void	rotate_both(t_stack *stack, char *printer);
+
+		//sort_index.c//
+void	sort_three(t_stack *stack);
+void	sort_five(t_stack *stack);
+void	sort(t_stack *stack);
+void	ft_sort_back(t_stack *stack);
+void	ft_highest_to_top(t_stack *stack);
+
+		//checks.c//
+int		check_if_num(char *str);
+int		ft_dupe_check(int *nbr, int size);
+int		ft_check_zero(char *nbr);
+
+		//utils2.c//
+int		full_check(int argc, char *argv[], t_stack *stack);
+char	*arg_processor(int argc, char *argv[]);
+int		str_processor(int argc, char *argv[], t_stack *stack);
+void	copy_to_initstack(t_stack *stack);
+int		len_of_args(int argc, char *argv[]);
 
 #endif
