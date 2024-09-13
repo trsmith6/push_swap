@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:37:20 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/11 14:03:59 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/13 11:42:54 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,22 @@ int	ft_check_zero(char *nbr)
 	while (nbr[i] != '\0')
 	{
 		return (0);
+	}
+	return (1);
+}
+
+int	check_if_sorted(t_stack *stack)
+{
+	int	i;
+
+	i = 0;
+	while (i < stack->len_a - 1)
+	{
+		if (stack->stack_a[i] > stack->stack_a[i + 1])
+		{
+			return (0);
+		}
+		i++;
 	}
 	return (1);
 }

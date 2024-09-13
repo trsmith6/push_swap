@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 09:17:32 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/11 15:35:12 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/13 12:02:56 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
-//include your libs
+# include "libft/libft.h"
+# include "printf/ft_printf.h"
 
 		//structs//
 typedef struct s_stack
@@ -67,6 +68,7 @@ void	ft_highest_to_top(t_stack *stack);
 int		check_if_num(char *str);
 int		ft_dupe_check(int *nbr, int size);
 int		ft_check_zero(char *nbr);
+int		check_if_sorted(t_stack *stack);
 
 		//utils2.c//
 int		full_check(int argc, char *argv[], t_stack *stack);
@@ -74,5 +76,10 @@ char	*arg_processor(int argc, char *argv[]);
 int		str_processor(int argc, char *argv[], t_stack *stack);
 void	copy_to_initstack(t_stack *stack);
 int		len_of_args(int argc, char *argv[]);
+
+		//swap.c//
+void	swap_a(t_stack*stack, char *printer);
+void	swap_b(t_stack *stack, char *printer);
+void	swap_both(t_stack *stack, char *printer);
 
 #endif

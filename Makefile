@@ -6,7 +6,7 @@
 #    By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 09:34:35 by trsmith           #+#    #+#              #
-#    Updated: 2024/09/11 12:58:49 by trsmith          ###   ########.fr        #
+#    Updated: 2024/09/13 11:37:43 by trsmith          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,9 @@ SRCS =	push_swap.c \
 		push_revrot.c \
 		rotate.c \
 		sort_index.c \
+		checks.c \
+		swap.c \
+		utils2.c \
 		
 COMPILER = cc
 
