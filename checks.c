@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 13:37:20 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/13 11:42:54 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/17 11:05:48 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,4 +83,11 @@ int	check_if_sorted(t_stack *stack)
 		i++;
 	}
 	return (1);
+}
+
+void	another_free_thing(char *string, char **string_splitter)
+{
+	free(string);
+	free_string_splitter(string_splitter);
+	free(string_splitter);
 }

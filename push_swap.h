@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 09:17:32 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/13 12:02:56 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/17 11:07:59 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 # include <unistd.h>
 # include <stdio.h>
 # include <stdlib.h>
-# include "libft/libft.h"
-# include "printf/ft_printf.h"
+# include "main-libs/libft/libft.h"
+# include "main-libs/printf/ft_printf.h"
 
 		//structs//
 typedef struct s_stack
@@ -37,6 +37,7 @@ int		main(int argc, char *argv[]);
 int		sort_index(t_stack *stack);
 int		ft_lower_sort(int nb);
 int		ft_lower_sort_search(int b, int low, int high);
+void	free_string_splitter(char **string_splitter);
 
 		//push_revrot.c//
 void	push_a(t_stack *stack, char *printer);
@@ -69,6 +70,7 @@ int		check_if_num(char *str);
 int		ft_dupe_check(int *nbr, int size);
 int		ft_check_zero(char *nbr);
 int		check_if_sorted(t_stack *stack);
+void	another_free_thing(char *string, char **string_splitter);
 
 		//utils2.c//
 int		full_check(int argc, char *argv[], t_stack *stack);

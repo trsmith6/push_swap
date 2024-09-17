@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 14:09:02 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/13 11:31:25 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/17 11:03:27 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	full_check(int argc, char *argv[], t_stack *stack)
 	return (0);
 }
 
-int	*arg_processor(int argc, char *argv[])
+char	*arg_processor(int argc, char *argv[])
 {
 	int		length;
 	char	*str;
@@ -64,7 +64,7 @@ int	*arg_processor(int argc, char *argv[])
 	return (str);
 }
 
-int	str_processor(int argc, char **argv[], t_stack *stack)
+int	str_processor(int argc, char *argv[], t_stack *stack)
 {
 	char	*string;
 	int		i;

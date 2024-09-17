@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 11:13:29 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/11 13:24:55 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/17 10:45:19 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	sort_three(t_stack *stack)
 	else if (arr[0] > arr[1] && arr[2] > arr[0])
 		swap_a(stack, "sa");
 	else if (arr[0] < arr[1] && arr[2] < arr[0])
-		revrot_(stack, "rra");
+		revrot_a(stack, "rra");
 	else if (arr[0] > arr[1] && arr[2] < arr[1])
 		rotate_a(stack, "ra");
 	else if (arr[0] > arr[1] && arr[2] < arr[1])
@@ -98,7 +98,7 @@ void	ft_sort_back(t_stack *stack)
 	while (stack->len_b > 0)
 	{
 		ft_highest_to_top(stack);
-		psuh_a(stack, "pa");
+		push_a(stack, "pa");
 	}
 }
 

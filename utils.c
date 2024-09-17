@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 09:27:52 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/10 10:27:15 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/09/17 10:42:05 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_printer(char *printer)
 {
-	if (strcmp(printer, "x"))
+	if (ft_strcmp(printer, "x"))
 	{
 		ft_printf("%s\n", printer);
 	}
