@@ -6,7 +6,7 @@
 #    By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/10 09:34:35 by trsmith           #+#    #+#              #
-#    Updated: 2024/09/23 12:29:21 by trsmith          ###   ########.fr        #
+#    Updated: 2024/09/23 12:35:58 by trsmith          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,9 @@ OBJS = $(SRCS:.c=.o)
 CFLAGS = -Wall -Wextra -Werror -g
 
 all: $(NAME)
+
+init:
+	@git submodule init && git submodule update && cd main-libs && git submodule init && git submodule update
 
 $(NAME): $(OBJS)
 	@cd main-libs && make --silent
