@@ -1,0 +1,9 @@
+[submodule "libft"]
+	path = libft
+	url = https://github.com/trsmith6/libft.git
+[submodule "printf"]
+	path = printf
+	url = https://github.com/trsmith6/printf.git
+[submodule "gnl"]
+	path = gnl
+	url = https://github.com/trsmith6/gnl.git
