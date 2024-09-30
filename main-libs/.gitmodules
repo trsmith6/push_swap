@@ -1,6 +1,0 @@
-[submodule "libft"]
-	path = libft
-	url = git@vogsphere.42heilbronn.de:vogsphere/intra-uuid-903e173e-c6ed-4c7f-9d0e-4d922dda8bb7-5555842-trsmith
-[submodule "printf"]
-	path = printf
-	url = git@vogsphere.42heilbronn.de:vogsphere/intra-uuid-84cf5bf3-3020-4b42-8a99-034ceeaf3f5a-5589740-trsmith
