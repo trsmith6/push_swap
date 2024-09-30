@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/09/30 12:57:02 by trsmith           #+#    #+#              #
-#    Updated: 2024/09/30 12:57:28 by trsmith          ###   ########.fr        #
+#    Created: 2024/09/30 13:38:01 by trsmith           #+#    #+#              #
+#    Updated: 2024/09/30 13:38:13 by trsmith          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,6 +31,7 @@ PRINTFSRCS =ft_print_char.c\
             ft_printnum.c\
             ft_print_str.c\
             ft_printf.c
+
 
 LIBFT_OBJS = $(addprefix $(LIBFT_DIR)/, $(LIBFTSRCS:.c=.o))
 PRINTFOBJS = $(addprefix $(PRINTF_DIR)/, $(PRINTFSRCS:%.c=%.o))
