@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/05/27 14:09:25 by trsmith           #+#    #+#              #
-#    Updated: 2024/09/23 12:28:26 by trsmith          ###   ########.fr        #
+#    Created: 2024/09/30 12:57:02 by trsmith           #+#    #+#              #
+#    Updated: 2024/09/30 12:57:28 by trsmith          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,6 @@ NAME = libs.a
 
 LIBFT_DIR = ./libft
 PRINTF_DIR = ./printf
-
 
 LIBFTSRCS =	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 			ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_lstadd_back.c \
@@ -32,8 +31,6 @@ PRINTFSRCS =ft_print_char.c\
             ft_printnum.c\
             ft_print_str.c\
             ft_printf.c
-
-GNLSRCS = get_next_line.c get_next_line_utils.c
 
 LIBFT_OBJS = $(addprefix $(LIBFT_DIR)/, $(LIBFTSRCS:.c=.o))
 PRINTFOBJS = $(addprefix $(PRINTF_DIR)/, $(PRINTFSRCS:%.c=%.o))
