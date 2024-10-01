@@ -1,0 +1,3 @@
+[submodule "main-libs"]
+	path = main-libs
+	url = https://github.com/trsmith6/main-libs.git
