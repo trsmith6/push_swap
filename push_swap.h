@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 09:17:32 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/23 12:19:48 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/10/04 14:50:33 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,10 +83,5 @@ int		len_of_args(int argc, char *argv[]);
 void	swap_a(t_stack*stack, char *printer);
 void	swap_b(t_stack *stack, char *printer);
 void	swap_both(t_stack *stack, char *printer);
-
-		//utils3.c//
-int		ft_strcmp(const char *s1, const char *s2);
-int		ft_wordcount(char *str, int delimiter);
-long	ft_atol(const char *str);
 
 #endif
