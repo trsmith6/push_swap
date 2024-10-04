@@ -6,7 +6,7 @@
 /*   By: trsmith <trsmith@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/11 11:13:29 by trsmith           #+#    #+#             */
-/*   Updated: 2024/09/17 10:45:19 by trsmith          ###   ########.fr       */
+/*   Updated: 2024/10/04 15:29:33 by trsmith          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,26 @@ void	sort_three(t_stack *stack)
 
 	arr = stack->stack_a;
 	if (ft_is_sorted(stack))
-	{
 		return ;
-	}
-	if (arr[0] < arr[1] && arr[2] > arr[0])
-	{
-		swap_a(stack, "sa");
-		rotate_a(stack, "ra");
-	}
-	else if (arr[0] > arr[1] && arr[2] > arr[0])
-		swap_a(stack, "sa");
-	else if (arr[0] < arr[1] && arr[2] < arr[0])
-		revrot_a(stack, "rra");
-	else if (arr[0] > arr[1] && arr[2] < arr[1])
-		rotate_a(stack, "ra");
-	else if (arr[0] > arr[1] && arr[2] < arr[1])
+	if (arr[0] > arr[1] && arr[0] > arr[2] && arr[1] > arr[2])
 	{
 		swap_a(stack, "sa");
 		revrot_a(stack, "rra");
+	}
+	else if (arr[0] > arr[1] && arr[0] > arr[2] && arr[1] < arr[2])
+	{
+		rotate_a(stack, "ra");
+	}
+	else if (arr[0] > arr[1] && arr[0] < arr[2])
+	{
+		swap_a(stack, "sa");
+	}
+	else if (arr[0] < arr[1] && arr[0] > arr[2])
+		revrot_a(stack, "rra");
+	else if (arr[0] < arr[1] && arr[1] > arr[2])
+	{
+		swap_a(stack, "sa");
+		rotate_a(stack, "ra");
 	}
 }
 
